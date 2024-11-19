@@ -26,6 +26,8 @@ The solution is for a different number:
 ### New to C?	Pointer creation and dereferencing, p. 84
 > The type of this pointer depends on the type of `x`, and hence these three
 > pointers are of type `int *`, `float *`, and **`void **`**, respectively.
+
 This should say:
+
 > The type of this pointer depends on the type of `x`, and hence these three
 > pointers are of type `int *`, `float *`, and **`void *`**, respectively.
