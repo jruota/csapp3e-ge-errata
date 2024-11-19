@@ -22,3 +22,10 @@ The solution is for a different number:
 ```
 1100 1001 0111 1011 [0xC97B]
 ```
+
+### New to C?	Pointer creation and dereferencing, p. 84
+> The type of this pointer depends on the type of `x`, and hence these three
+> pointers are of type `int *`, `float *`, and **`void **`**, respectively.
+This should say:
+> The type of this pointer depends on the type of `x`, and hence these three
+> pointers are of type `int *`, `float *`, and **`void *`**, respectively.
