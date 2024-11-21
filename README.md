@@ -31,3 +31,17 @@ This should say:
 
 > The type of this pointer depends on the type of `x`, and hence these three
 > pointers are of type `int *`, `float *`, and **`void *`**, respectively.
+
+### Solution to Problem 2.6, p. 181
+The alignment of the hexadecimal float `4A1F23E0` to its binary representation
+is off.
+The asterisks marking matching bits is wrong. It makes it look like the first
+22 bits are matching, which is not the case. Instead, the last 21 bits of the
+integer match with bits 10 to 30 (inclusive) of the floating point.
+```
+0   0   2   7   C   8   F   8
+00000000001001111100100011111000
+           *********************
+  4   A   1   F   2   3   E   0
+  01001010000111110010001111100000
+```
