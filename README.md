@@ -1,5 +1,5 @@
 # csapp3e-ge-errata
-Errata in the global, third edition of "Computer Systems: A Programmer's Perspective"
+Errata in the 3rd edition of "Computer Systems: A Programmer's Perspective", Global Edition
 
 ## Chapter 2: Representing and Manipulating Information
 
@@ -23,7 +23,7 @@ The solution is for a different number:
 1100 1001 0111 1011 [0xC97B]
 ```
 
-### New to C?	Pointer creation and dereferencing, p. 84
+### **New to C?**	Pointer creation and dereferencing, p. 84
 > The type of this pointer depends on the type of `x`, and hence these three
 > pointers are of type `int *`, `float *`, and **`void **`**, respectively.
 
@@ -45,3 +45,8 @@ integer match with bits 10 to 30 (inclusive) of the floating point.
   4   A   1   F   2   3   E   0
   01001010000111110010001111100000
 ```
+
+### **Aside**	Shifting by *k*, for large values of *k*, p. 95
+`unsigned uval = 0xFEDCBA98u >> 40;`
+should be
+`unsigned uval = 0xFEDCBA98 >> 40;`
