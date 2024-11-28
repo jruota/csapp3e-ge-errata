@@ -46,7 +46,36 @@ integer match with bits 10 to 30 (inclusive) of the floating point.
   01001010000111110010001111100000
 ```
 
+### Practice Problem 2.16, p. 94 / p. 184
+Two answers for the arithmetic right shift by 3 bits are wrong.
+
+They are given as
+```
+| :------------------------: |
+| Arithmetic a >> 3          |
+| Binary          | Hex      |
+| :-------------: | :------: |
+| [1111 1010]     | 0xFA     |
+| **[1110 1100]** | **0xEC** |
+| [0000 1110]     | 0x0E     |
+| **[1110 1000]** | **0xE9** |
+```
+
+They should be
+```
+| :------------------------: |
+| Arithmetic a >> 3          |
+| Binary          | Hex      |
+| :-------------: | :------: |
+| [1111 1010]     | 0xFA     |
+| **[0000 1100]** | **0x0C** |
+| [0000 1110]     | 0x0E     |
+| **[0000 1000]** | **0x08** |
+```
+
 ### **Aside**	Shifting by *k*, for large values of *k*, p. 95
 `unsigned uval = 0xFEDCBA98u >> 40;`
+
 should be
+
 `unsigned uval = 0xFEDCBA98 >> 40;`
