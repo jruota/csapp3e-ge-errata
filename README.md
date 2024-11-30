@@ -76,3 +76,11 @@ Arithmetic a >> 3
 should be
 
 `unsigned uval = 0xFEDCBA98 >> 40;`
+
+### Solution to Problem 2.17 (page 101), p. 184
+The solution for the first problem has a wrong power in the last column for
+the $B2T_4 \left( \vec{x} \right)$ function.
+
+| :-------------------: | :------------: | :----------------------------- | :----------------------------- |
+| Hexadecimal $\vec{x}$ | Binary \vec{x} | $B2U_4 \left( \vec{x} \right)$ | $B2T_4 \left( \vec{x} \right)$ |
+| `0xA`                 | [1010]         | $2^3 + 2^1 = 10$               | $-2^3 + 2^1 = -6$              |
