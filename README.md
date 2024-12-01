@@ -92,3 +92,16 @@ It should be
 | Hexadecimal $\vec{x}$ | Binary $\vec{x}$ | $B2U_4 \left( \vec{x} \right)$ | $B2T_4 \left( \vec{x} \right)$ |
 | :-------------------: | :--------------: | :----------------------------- | :----------------------------- |
 | 0xA                   | [1010]           | $2^3 + 2^1 = 10$               | **$-2^3 + 2^1 = -6$**          |
+
+### Practice Problem 2.18, p. 105 / p. 185
+The problem states
+
+> Being able to recognize these numbers and understand their significance (for
+> example, whether they are negative or positive) is an important skill.
+
+> [...] convert the hexadecimal values (in 32-bit two's-complement form) [...]
+
+but the numbers given in hexadecimal are unsigned with a minus sign (-)
+signifying a negative value. This renders the exercise mostly useless and
+demotes it to being an exercise in converting unsigned hexadecimal values to
+unsigned decimal values.
