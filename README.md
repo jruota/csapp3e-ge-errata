@@ -110,13 +110,13 @@ unsigned decimal values.
 The code at the bottom of the page is
 
 ```C
-unsigned	u = 4294967295**u**;	/* UMax */
+unsigned	u = 4294967295u;	/* UMax */
 int		tu = (int) u;
 ```
 
 It should be
 
 ```C
-unsigned u = 4294967295;	/* UMax */
+unsigned	u = 4294967295;	/* UMax */
 int		tu = (int) u;
 ```
