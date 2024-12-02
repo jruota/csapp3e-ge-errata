@@ -105,3 +105,18 @@ but the numbers given in hexadecimal are unsigned with a minus sign (-)
 signifying a negative value. This renders the exercise mostly useless and
 demotes it to being an exercise in converting unsigned hexadecimal values to
 unsigned decimal values.
+
+### 2.2.4 Conversion between Signed and Unsigned
+The code at the bottom of the page is
+
+```C
+unsigned u = 4294967295**u**;	/* UMax */
+int		tu = (int) u;
+```
+
+It should be
+
+```C
+unsigned u = 4294967295;	/* UMax */
+int		tu = (int) u;
+```
