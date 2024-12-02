@@ -110,7 +110,7 @@ unsigned decimal values.
 The code at the bottom of the page is
 
 ```C
-unsigned u = 4294967295**u**;	/* UMax */
+unsigned	u = 4294967295**u**;	/* UMax */
 int		tu = (int) u;
 ```
 
