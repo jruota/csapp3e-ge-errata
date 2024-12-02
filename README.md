@@ -101,7 +101,7 @@ The problem states
 
 > [...] convert the hexadecimal values (in 32-bit two's-complement form) [...]
 
-but the numbers given in hexadecimal are unsigned with a minus sign (-)
+The numbers given in hexadecimal are unsigned with a minus sign (-)
 signifying a negative value. This renders the exercise mostly useless and
 demotes it to being an exercise in converting unsigned hexadecimal values to
 unsigned decimal values.
@@ -117,6 +117,6 @@ int		tu = (int) u;
 It should be
 
 ```C
-unsigned	u = 4294967295;	/* UMax */
+unsigned	u = 4294967295;		/* UMax */
 int		tu = (int) u;
 ```
