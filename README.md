@@ -128,13 +128,18 @@ The trailing 'u' is valid C syntax, but in this instance not necessary.
 ### 2.2.4 Conversion between Signed and Unsigned, p. 107
 It says
 
-> This is a general rule for how most C implementations [...] 
+> This is a general rule for how most C implementations ... [...] 
 > That is, given an integer $x$ in the range **$0 \leq x < UMax_w$**, the
 > function $U2B_w(x)$ gives the unique $w$-bit unsigned representation of x. 
 > [...]
 
 This should say
 
-> This is a general rule for how most C implementations [...] 
+> This is a general rule for how most C implementations ... [...] 
 > That is, given an integer $x$ in the range **$0 \leq x \leq UMax_w$**, the
 > function $U2B_w(x)$ gives the unique $w$-bit unsigned representation of x.
+> [...]
+
+### Solution to Problem 2.19 (page 107), p. 185
+The value $8$ is out of range for a 4-bit two's complement number. The unsigned
+bit pattern for $8$ is $1000$, which would give $-8$ in two's complement.
