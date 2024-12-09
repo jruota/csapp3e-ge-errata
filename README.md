@@ -106,7 +106,7 @@ signifying a negative value. This renders the exercise mostly useless and
 demotes it to being an exercise in converting unsigned hexadecimal values to
 unsigned decimal values.
 
-### 2.2.4 Conversion between Signed and Unsigned, p. 106
+### ~~~2.2.4 Conversion between Signed and Unsigned, p. 106
 The code at the bottom of the page is (last line on p. 107)
 
 ```C
@@ -115,7 +115,7 @@ int		tu = (int) u;
 printf("u = %u, tu = %d\n", u, tu);
 ```
 
-~~It should be~~
+It should be
 
 ```C
 unsigned	u = 4294967295;		/* UMax */
@@ -123,7 +123,14 @@ int		tu = (int) u;
 printf("u = %u, tu = %d\n", u, tu);
 ```
 
-The trailing 'u' is valid C syntax, but in this instance not necessary.
+The trailing 'u' is valid C syntax, but in this instance not necessary.~~~
+
+The use of `u` is clarified on page 110:
+
+> Generally, most numbers are signed by default. For example, when declaring a 
+> constant such as `12345` or `0x1A2B`, the value is considered signed. Adding
+> character `U` or `u` as a suffix creates and unsigned constant; for example,
+> `12345U` or `0x1A2Bu`.
 
 ### 2.2.4 Conversion between Signed and Unsigned, p. 107
 It says
