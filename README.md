@@ -106,7 +106,7 @@ signifying a negative value. This renders the exercise mostly useless and
 demotes it to being an exercise in converting unsigned hexadecimal values to
 unsigned decimal values.
 
-### ~~~2.2.4 Conversion between Signed and Unsigned, p. 106
+### 2.2.4 Conversion between Signed and Unsigned, p. 106
 The code at the bottom of the page is (last line on p. 107)
 
 ```C
@@ -115,7 +115,7 @@ int		tu = (int) u;
 printf("u = %u, tu = %d\n", u, tu);
 ```
 
-It should be
+~~It should be~~
 
 ```C
 unsigned	u = 4294967295;		/* UMax */
@@ -123,7 +123,7 @@ int		tu = (int) u;
 printf("u = %u, tu = %d\n", u, tu);
 ```
 
-The trailing 'u' is valid C syntax, but in this instance not necessary.~~~
+~~The trailing 'u' is valid C syntax, but in this instance not necessary.~~
 
 The use of `u` is clarified on page 110:
 
@@ -150,3 +150,32 @@ This should say
 ### Solution to Problem 2.19 (page 107), p. 185
 The value $8$ is out of range for a 4-bit two's complement number. The unsigned
 bit pattern for $8$ is $1000$, which would give $-8$ in two's complement.
+
+### Solution to Practice Problem 2.24 (p. 118),  p. 186
+The solutions for the truncation of the two's complement numbers (last column)
+are given as
+
+| Original | Truncated |
+| :------: | :-------: |
+| 1        | 1         |
+| 3        | 3         |
+| 5        | 5         |
+| -4       | 4         |
+| -2       | 6         |
+
+They should be
+
+| Original | Truncated |
+| :------: | :-------: |
+| 1        | 1         |
+| 3        | 3         |
+| 5        | -3        |
+| -4       | -4        |
+| -2       | -2        |
+
+The solutions given in the book are interpreted ans unsigned, but should be
+interpreted as two's complement.
+
+Note that the bit patterns for 5 and -3 ($101$), 4 and -4 ($100$),
+6 and -2 ($110$) are the same in their truncated form.
+
