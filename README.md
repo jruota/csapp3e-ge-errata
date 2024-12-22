@@ -149,7 +149,16 @@ This should say
 
 ### Solution to Problem 2.19 (page 107), p. 185
 The value $8$ is out of range for a 4-bit two's complement number. The unsigned
-bit pattern for $8$ is $1000$, which would give $-8$ in two's complement.
+bit pattern for $8$ is `1000`, which would give $-8$ in two's complement.
+
+### PRINCIPLE: Truncation of a two's-complement number, p. 118
+There is a typo.
+
+> [...] and let $\vec{'x}$ be the result of truncating [...]
+
+should be
+
+> [...] and let $\vec{x}'$ be the result of truncating [...]
 
 ### Solution to Practice Problem 2.24 (p. 118),  p. 186
 The solutions for the truncation of the two's complement numbers (last column)
@@ -176,6 +185,6 @@ They should be
 The solutions given in the book are interpreted ans unsigned, but should be
 interpreted as two's complement.
 
-Note that the bit patterns for 5 and -3 ($101$), 4 and -4 ($100$),
-6 and -2 ($110$) are the same in their truncated form.
+Note that the bit patterns for 5 and -3 (`101`), 4 and -4 (`100`),
+6 and -2 (`110`) are the same in their truncated form.
 
